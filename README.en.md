@@ -1,7 +1,3 @@
-#### Languages
-- [ไทย](README.th.md)
-- [English](README.en.md)
-
 # API Status Server
 
 This project is an API Status Server that provides system metrics including CPU, RAM, disk, network, and uptime statistics. The API is built using Node.js and Express, and it fetches system information using various Node.js libraries such as `os-utils` and `systeminformation`.

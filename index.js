@@ -6,9 +6,8 @@ const { versions } = require('process');
 
 const { log } = require('console');
 
-const { port } = require('./config');
-
 const app = express();
+const PORT = 3000;
 
 let disks = [];
 let networks = [];
@@ -112,7 +111,7 @@ setInterval(() => {
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send('Server Monitor API By. RIIIXCH');
+    res.send('API Status Server By. RIIIXCH');
 });
 
 app.get('/status', (req, res) => {
@@ -181,10 +180,10 @@ app.get('/status', (req, res) => {
 });
 
 app.all('*', (req, res) => {
-    res.status(404).send('Not Found');
+    res.send('API Status Server By. RIIIXCH');
 });
 
-app.listen(port, () => {
-    log(`[RIIIXCH] Applications is listening port ${port}`)
-    log(`[RIIIXCH] API URL: http://localhost:${port}`);
+app.listen(PORT, () => {
+    log(`[Status Server] API is running on http://localhost:${PORT}`);
+    log(`[Status Server] Fetch API : http://localhost:${PORT}/status`);
 });
