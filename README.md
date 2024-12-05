@@ -1,8 +1,10 @@
-# Server Monitor API
+# API-Status-Server
+
+## English
 
 This project provides an API that monitors the system's resource usage, including CPU, RAM, Disk, and Network stats. It serves as a tool to track and gather information about server performance through various metrics.
 
-## Features
+### Features
 
 - **CPU Usage**: Fetches CPU model, number of cores, and current CPU usage percentage.
 - **RAM Usage**: Shows total, used, and available RAM with usage percentage.
@@ -11,22 +13,22 @@ This project provides an API that monitors the system's resource usage, includin
 - **System Uptime**: Displays how long the system has been running since the last boot.
 - **Node.js Version**: Provides the installed Node.js version.
 
-## Setup
+### Setup
 
-### Prerequisites
+#### Prerequisites
 
 - Node.js (v12.0 or higher recommended)
 
-### Installation
+#### Installation
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-repository/server-monitor-api.git
+   git clone https://github.com/riiixch/API-Status-Server.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd server-monitor-api
+   cd API-Status-Server
    ```
 
 3. Install the required dependencies:
@@ -45,10 +47,66 @@ This project provides an API that monitors the system's resource usage, includin
 
 1. Start the server:
    ```bash
-   node app.js
+   node .
    ```
 
 2. The API will be available at `http://localhost:<port>` (default port is 3000).
+
+---
+
+## ภาษาไทย
+
+โปรเจคนี้ให้บริการ API ที่ใช้ในการตรวจสอบการใช้งานทรัพยากรของระบบ รวมถึงการใช้งาน CPU, RAM, ดิสก์, และการใช้งานเครือข่าย มันถูกออกแบบมาเพื่อใช้ในการติดตามและรวบรวมข้อมูลเกี่ยวกับประสิทธิภาพของเซิร์ฟเวอร์ผ่านการวัดผลต่าง ๆ
+
+### คุณสมบัติ
+
+- **การใช้งาน CPU**: แสดงโมเดล CPU, จำนวนคอร์ และเปอร์เซ็นต์การใช้งาน CPU
+- **การใช้งาน RAM**: แสดง RAM รวม, ที่ใช้ และที่เหลือพร้อมเปอร์เซ็นต์การใช้งาน
+- **การใช้งานดิสก์**: ตรวจสอบพื้นที่ดิสก์ที่ใช้แล้ว, รวม และที่เหลือในรูปแบบที่อ่านได้
+- **การใช้งานเครือข่าย**: ติดตามอัตราอัปโหลดและดาวน์โหลดในเวลาจริง
+- **เวลาทำงานของระบบ**: แสดงระยะเวลาในการทำงานของระบบตั้งแต่เปิดเครื่อง
+- **เวอร์ชัน Node.js**: แสดงเวอร์ชันของ Node.js ที่ติดตั้ง
+
+### การตั้งค่า
+
+#### ข้อกำหนด
+
+- Node.js (แนะนำเวอร์ชัน 12.0 หรือสูงกว่า)
+
+#### การติดตั้ง
+
+1. โคลน repository นี้:
+   ```bash
+   git clone https://github.com/your-repository/API-Status-Server.git
+   ```
+
+2. เข้าไปที่ไดเร็กทอรีโปรเจค:
+   ```bash
+   cd API-Status-Server
+   ```
+
+3. ติดตั้ง dependencies ที่จำเป็น:
+   ```bash
+   npm install
+   ```
+
+4. สร้างไฟล์ `config.js` ในไดเร็กทอรีราก และตั้งค่าพอร์ตที่ต้องการ:
+   ```js
+   module.exports = {
+     port: 3000
+   };
+   ```
+
+### การเริ่มใช้งาน API
+
+1. เริ่มเซิร์ฟเวอร์:
+   ```bash
+   node .
+   ```
+
+2. API จะสามารถเข้าถึงได้ที่ `http://localhost:<port>` (พอร์ตเริ่มต้นคือ 3000).
+
+---
 
 ## Endpoints
 
@@ -66,7 +124,7 @@ This project provides an API that monitors the system's resource usage, includin
      "ram_total": "16.00 GB",
      "ram_use": "8.00 GB",
      "ram_used": "50.00",
-     "disk_total": "1024.00 GB",
+     "disk_total": "1.00 TB",
      "disk_use": "500.00 GB",
      "disk_used": "50.00",
      "upload": "10.00 Mbps",
