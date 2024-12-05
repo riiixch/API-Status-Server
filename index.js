@@ -6,8 +6,9 @@ const { versions } = require('process');
 
 const { log } = require('console');
 
+const { port } = require('./config');
+
 const app = express();
-const port = 2001;
 
 let disks = [];
 let networks = [];
