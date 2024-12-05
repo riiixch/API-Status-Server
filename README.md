@@ -124,7 +124,7 @@ This project provides an API that monitors the system's resource usage, includin
      "ram_total": "16.00 GB",
      "ram_use": "8.00 GB",
      "ram_used": "50.00",
-     "disk_total": "1.00 TB",
+     "disk_total": "1024.00 GB",
      "disk_use": "500.00 GB",
      "disk_used": "50.00",
      "upload": "10.00 Mbps",
