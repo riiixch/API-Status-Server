@@ -1,1 +1,1 @@
-# APIStatusServer | API สถานนะ Server
+# API Status Server | API สถานนะ Server
