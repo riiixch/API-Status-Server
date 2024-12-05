@@ -77,7 +77,7 @@ This project provides an API that monitors the system's resource usage, includin
 
 1. โคลน repository นี้:
    ```bash
-   git clone https://github.com/your-repository/API-Status-Server.git
+   git clone https://github.com/riiixch/API-Status-Server.git
    ```
 
 2. เข้าไปที่ไดเร็กทอรีโปรเจค:
